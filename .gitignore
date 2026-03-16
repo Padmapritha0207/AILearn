@@ -1,0 +1,16 @@
+# Environment variables
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# Python cache
+backend/__pycache__/
+backend/*.pyc
+
+# Node modules - very large, don't upload
+frontend/node_modules/
+frontend/.next/
+
+# OS files
+.DS_Store
+Thumbs.db
