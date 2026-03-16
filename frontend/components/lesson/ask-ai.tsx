@@ -35,7 +35,7 @@ export function AskAI({ tool }: { tool: string }) {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8080/api/ask/${tool}?question=${encodeURIComponent(userMessage)}`
+        `http://ailearn-backend.onrender.com/api/ask/${tool}?question=${encodeURIComponent(userMessage)}`
       )
       const data = await response.json()
       setMessages((prev) => [
